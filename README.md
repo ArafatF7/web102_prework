@@ -24,7 +24,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://imgur.com/a/SuImkxe' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='Sea Monster.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](https://www.cockos.com/licecap/)
 
