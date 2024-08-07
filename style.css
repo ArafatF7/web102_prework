@@ -3,6 +3,38 @@
 body {
     font-family: 'Cabin';
     background-color: #758190;
+    margin: 0; /*added*/
+    padding: 0; /*added*/
+    color: #333 /*added*/
+}
+
+.navbar {
+    background-color: lightblue; /*added*/
+    padding: 10px; /*added*/
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /*added*/
+}
+
+.navbar ul {
+    list-style-type: none; /*added*/
+    margin: 0; /*added*/
+    padding: 0; /*added*/
+    display: flex; /*added*/
+    justify-content: center; /*added*/
+}
+
+.navbar ul li {
+    margin: 0 15px; /*added*/
+}
+
+.navbar ul li a {
+    text-decoration: none; /*added*/
+    color: #333; /*added*/
+    font-weight: 600; /*added*/
+    font-size: 18px; /*added*/
+}
+
+.navbar ul li a:hover {
+    color: #000; /*added*/
 }
 
 #tentacles {
@@ -14,13 +46,26 @@ body {
     background-color: lightblue;
     padding: 1%;
     align-items: center;
+    margin: 0 -10px;
     margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+    margin-right: -10px; /*added*/
+    margin-top: -10px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /*added*/
+}
+
+.header-text { /*added*/
+    font-size: 24px;
+    margin-left: 10px;
 }
 
 .stats-container {
     display: flex;
+    align-items: center; /*my code*/
+}
+/*my code*/
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
@@ -30,6 +75,11 @@ body {
     margin: 1%;
     width: 100%;
     text-align: center;
+    transition: transform 0.3s; /*added*/
+}
+
+.stats-card:hover {
+    transform: scale(1.05); /*added*/
 }
 
 #num-contributions, #total-raised, #num-games {
@@ -40,6 +90,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 20px; /*added*/
 }
 
 .game-img {
@@ -55,15 +106,19 @@ body {
     width: 300px;
     text-align: center;
     border-radius: 7px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /*added*/
+    transition: transform 0.3s; /*added*/
 }
 
 .game-card:hover {
     cursor: pointer;
     box-shadow: 0 0 30px lightblue;
+    transform: scale(1.05); /*added*/
 }
 
 #button-container {
     text-align: center;
+    margin: 20px 0; /*added*/
 }
 
 button {
@@ -72,4 +127,39 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+    background-color: #a8b0bc; /*added*/
+    color: #FFF; /*added*/
+    transition: background-color 0.3s; /*added*/
+}
+
+button:hover {
+    background-color: #758190; /*added*/
+}
+
+#search-container {
+    text-align: center; /*added*/
+    margin: 20 px 0; /*added*/
+}
+
+#search-bar{
+    width: 80%; /*added*/
+    padding: 10px; /*added*/
+    border-radius: 7px; /*added*/
+    border: 1px solid #a8b0bc; /*added*/
+    font-size: 16px; /*added*/
+}
+
+#search-btn {
+    padding: 10px 20px; /*added*/
+    border-radius: 7px; /*added*/
+    background-color: #a8b0bc; /*added*/
+    color: #FFF; /*added*/
+    font-size: 16px; /*added*/
+    border: none; /*added*/
+    cursor: pointer; /*added*/
+    transition: background-color 0.3s; /*added*/
+}
+
+#search-btn:hover {
+    background-color: #758190; /*added*/
 }
